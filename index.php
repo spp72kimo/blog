@@ -131,11 +131,9 @@
                         </div>
                         <div class="title_bottom_bar"></div>
                         <div class="content">
-                          <div class="preview">
                             <?php echo $preview ?>
-                          </div>  
-                          <a class="read_more" href="article.php?id=<?php echo $id ?>">(...繼續閱讀)</a>
                         </div>
+                        <a class="read_more" href="article.php?id=<?php echo $id ?>">(...繼續閱讀)</a>
                         <div class="controller d-flex justify-content-end"> 
                         <?php if(!empty($_SESSION['id'])) {?>
                             <div class="controller_text me-3"><a class="me-3" href="editor.php?id=<?php echo $id ?>">編輯</a><a href="handle_delete.php?id=<?php echo $id ?>">刪除</a></div>
