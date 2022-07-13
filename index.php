@@ -131,8 +131,8 @@
                         </div>
                         <div class="title_bottom_bar"></div>
                         <div class="content">
-                            <?php echo $preview ?>
-                            <a class="read_more" href="article.php?id=<?php echo $id ?>">(...繼續閱讀)</a>
+                            <?php echo $content ?>
+                            <!-- <a class="read_more" href="article.php?id=<?php echo $id ?>">(...繼續閱讀)</a> -->
                         </div>
                         <div class="controller d-flex justify-content-end"> 
                         <?php if(!empty($_SESSION['id'])) {?>
