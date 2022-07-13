@@ -130,7 +130,10 @@
                             </span>
                         </div>
                         <div class="title_bottom_bar"></div>
-                        <div class="content"><?php echo $preview ?>
+                        <div class="content">
+                          <div class="preview">
+                            <?php echo $preview ?>
+                          </div>  
                           <a class="read_more" href="article.php?id=<?php echo $id ?>">(...繼續閱讀)</a>
                         </div>
                         <div class="controller d-flex justify-content-end"> 
