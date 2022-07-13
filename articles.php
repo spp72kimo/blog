@@ -157,7 +157,7 @@
               $page_dir++;}
             }
           ?>
-          <?php if($page != $total_page) { ?>
+          <?php if($page != $total_page && $total_page > 1) { ?>
           <a href="articles.php?page=<?php echo $page+1 ?>"><li>下一頁</li></a>
           <?php } ?>
         </ul>
