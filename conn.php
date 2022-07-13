@@ -14,5 +14,5 @@
 	$conn->query('SET NAMES UTF8');
 	// 設定資料庫時區
 	$conn->query('SET time_zone = "+8:00"');
-	echo "連線成功！ <br>";
+	// echo "連線成功！ <br>";
 ?>
