@@ -11,7 +11,7 @@
     $stmt->bind_param('s', $classify);
     $stmt->execute();
     $result = $stmt->get_result();
-    var_dump($result);
+    // var_dump($result);
     if($result->num_rows === 0) {
         // 建立新的 classify
         $sql_cmd = "INSERT INTO classifies(classify_name) VALUES(?)";
