@@ -38,8 +38,11 @@
 
         // 將文章存進資料庫
         $sql_cmd = "INSERT INTO articles(classify_id, subject, content) VALUES(?, ?, ?)";
+        echo "建構好指令準備執行<br/>";
         $stmt = $conn->prepare($sql_cmd);
+        echo "已準備指令<br/>";
         $stmt->bind_param('iss', $classify_id, $subject, $content);
+        echo "已綁定變數<br/>";
         $result = $stmt->execute();
         echo "文章存進資料庫內: ";
         echo $result;
