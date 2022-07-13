@@ -131,7 +131,7 @@
                         </div>
                         <div class="title_bottom_bar"></div>
                         <div class="content">
-                            <?php echo $preview ?>
+                            <?php echo htmlspecialchars($preview, ENT_QUOTES); ?>
                         </div>
                         <a class="read_more" href="article.php?id=<?php echo $id ?>">(...繼續閱讀)</a>
                         <div class="controller d-flex justify-content-end"> 
